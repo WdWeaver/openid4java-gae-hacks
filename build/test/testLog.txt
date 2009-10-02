@@ -1,0 +1,915 @@
+[DEBUG] 05:37:16,856 [OpenID4JavaUtils.java                   :  71]                      : Resource /openid4java.properties not found.
+[DEBUG] 05:37:16,856 [YadisResolver.java                      :  74]                      : discovery.yadis.html.parser:org.openid4java.discovery.yadis.CyberNekoDOMYadisHtmlParser
+[DEBUG] 05:37:16,872 [YadisResolver.java                      :  84]                      : discovery.xrds.parser:org.openid4java.discovery.xrds.XrdsParserImpl
+[INFO ] 05:37:16,903 [JCLLoggerAdapter.java                   : 216]                      : Logging to org.slf4j.impl.JCLLoggerAdapter@ee1ede via org.mortbay.log.Slf4jLog
+[INFO ] 05:37:16,934 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:17,059 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-30617157: init
+[INFO ] 05:37:17,059 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:17,091 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simpleheaders ...
+[DEBUG] 05:37:17,497 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexrds
+[DEBUG] 05:37:17,528 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:17,528 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexrds
+[DEBUG] 05:37:17,528 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:17,528 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:18,122 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:18,122 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[INFO ] 05:37:18,122 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=simpleheaders
+[INFO ] 05:37:18,122 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-30617157: destroy
+[INFO ] 05:37:18,138 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,138 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-31222429: init
+[INFO ] 05:37:18,153 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:18,153 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simpleheaders_xml ...
+[DEBUG] 05:37:18,153 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexml
+[DEBUG] 05:37:18,169 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:18,169 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexml
+[DEBUG] 05:37:18,169 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:18,169 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:18,200 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:18,200 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[INFO ] 05:37:18,200 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=simpleheaders_xml
+[INFO ] 05:37:18,200 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-31222429: destroy
+[INFO ] 05:37:18,200 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,200 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-32145791: init
+[INFO ] 05:37:18,216 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:18,216 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=simplehtml ...
+[WARN ] 05:37:18,216 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:18,231 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=simplehtml; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:18,231 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=simplehtml ...
+[DEBUG] 05:37:18,247 [HttpCache.java                          : 202]                      : Read 549 bytes.
+[DEBUG] 05:37:18,513 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML>
+
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<META content="http://localhost:8989/?headers=simplexrds&amp;xrds=simplexrds" http-equiv="X-XRDS-Location">
+
+<TITLE>Joe Schmoe's Homepage</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<H1>Joe Schmoe's larger than 350 bytes Homepage</H1>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+
+
+</BODY>
+</HTML>
+
+[DEBUG] 05:37:18,513 [CyberNekoDOMYadisHtmlParser.java        :  86]                      : Found X-XRDS-Location META tags.
+[DEBUG] 05:37:18,513 [YadisResolver.java                      : 314]                      : input:
+<html>
+<head>
+<meta http-equiv="X-XRDS-Location" content="http://localhost:8989/?headers=simplexrds&xrds=simplexrds">
+<title>Joe Schmoe's Homepage</title>
+</head>
+<body>
+<h1>Joe Schmoe's larger than 350 bytes Homepage</h1>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+</body>
+</html>
+
+[DEBUG] 05:37:18,513 [YadisResolver.java                      : 315]                      : xrdsLocation: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,513 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,528 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:18,528 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,544 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:18,559 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:18,559 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:18,559 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[INFO ] 05:37:18,559 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?html=simplehtml
+[INFO ] 05:37:18,559 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-32145791: destroy
+[INFO ] 05:37:18,575 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,575 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-28024236: init
+[INFO ] 05:37:18,591 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:18,591 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=redir_simpleheaders ...
+[INFO ] 05:37:18,591 [?                                       :   ?]                      : Redirect requested but followRedirects is disabled
+[DEBUG] 05:37:18,638 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexrds
+[DEBUG] 05:37:18,653 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:18,653 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexrds
+[DEBUG] 05:37:18,653 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:18,653 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:18,669 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:18,669 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[INFO ] 05:37:18,669 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=redir_simpleheaders
+[INFO ] 05:37:18,669 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-28024236: destroy
+[INFO ] 05:37:18,669 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,669 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-20189571: init
+[INFO ] 05:37:18,684 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:18,684 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=redir_simplehtml ...
+[INFO ] 05:37:18,700 [?                                       :   ?]                      : Redirect requested but followRedirects is disabled
+[WARN ] 05:37:18,716 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:18,716 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?headers=redir_simplehtml; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:18,716 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=redir_simplehtml ...
+[INFO ] 05:37:18,731 [?                                       :   ?]                      : Redirect requested but followRedirects is disabled
+[DEBUG] 05:37:18,747 [HttpCache.java                          : 202]                      : Read 549 bytes.
+[DEBUG] 05:37:18,747 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML>
+
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<META content="http://localhost:8989/?headers=simplexrds&amp;xrds=simplexrds" http-equiv="X-XRDS-Location">
+
+<TITLE>Joe Schmoe's Homepage</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<H1>Joe Schmoe's larger than 350 bytes Homepage</H1>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+
+
+</BODY>
+</HTML>
+
+[DEBUG] 05:37:18,747 [CyberNekoDOMYadisHtmlParser.java        :  86]                      : Found X-XRDS-Location META tags.
+[DEBUG] 05:37:18,747 [YadisResolver.java                      : 314]                      : input:
+<html>
+<head>
+<meta http-equiv="X-XRDS-Location" content="http://localhost:8989/?headers=simplexrds&xrds=simplexrds">
+<title>Joe Schmoe's Homepage</title>
+</head>
+<body>
+<h1>Joe Schmoe's larger than 350 bytes Homepage</h1>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+</body>
+</html>
+
+[DEBUG] 05:37:18,747 [YadisResolver.java                      : 315]                      : xrdsLocation: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,747 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,763 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:18,763 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,763 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:18,763 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:18,794 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:18,794 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[INFO ] 05:37:18,794 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=redir_simplehtml
+[INFO ] 05:37:18,794 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-20189571: destroy
+[INFO ] 05:37:18,794 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,794 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-18296761: init
+[INFO ] 05:37:18,809 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:18,809 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=redir_simplexrds ...
+[INFO ] 05:37:18,809 [?                                       :   ?]                      : Redirect requested but followRedirects is disabled
+[DEBUG] 05:37:18,841 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=redir_simplexrds ...
+[INFO ] 05:37:18,856 [?                                       :   ?]                      : Redirect requested but followRedirects is disabled
+[DEBUG] 05:37:18,872 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:18,872 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:18,872 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:18,888 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:18,888 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[DEBUG] 05:37:18,888 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=redir_simplexrds
+[INFO ] 05:37:18,888 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=redir_simplexrds
+[INFO ] 05:37:18,888 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-18296761: destroy
+[INFO ] 05:37:18,888 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,888 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-616697: init
+[INFO ] 05:37:18,903 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:18,903 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=simplehtml ...
+[WARN ] 05:37:18,919 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:18,919 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=simplehtml; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:18,919 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=simplehtml ...
+[DEBUG] 05:37:18,934 [HttpCache.java                          : 202]                      : Read 549 bytes.
+[DEBUG] 05:37:18,934 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML>
+
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<META content="http://localhost:8989/?headers=simplexrds&amp;xrds=simplexrds" http-equiv="X-XRDS-Location">
+
+<TITLE>Joe Schmoe's Homepage</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<H1>Joe Schmoe's larger than 350 bytes Homepage</H1>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+
+
+</BODY>
+</HTML>
+
+[DEBUG] 05:37:18,934 [CyberNekoDOMYadisHtmlParser.java        :  86]                      : Found X-XRDS-Location META tags.
+[DEBUG] 05:37:18,934 [YadisResolver.java                      : 314]                      : input:
+<html>
+<head>
+<meta http-equiv="X-XRDS-Location" content="http://localhost:8989/?headers=simplexrds&xrds=simplexrds">
+<title>Joe Schmoe's Homepage</title>
+</head>
+<body>
+<h1>Joe Schmoe's larger than 350 bytes Homepage</h1>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+</body>
+</html>
+
+[DEBUG] 05:37:18,934 [YadisResolver.java                      : 315]                      : xrdsLocation: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,934 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,950 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:18,950 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:18,950 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:18,950 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:18,966 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:18,966 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[INFO ] 05:37:18,966 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?html=simplehtml
+[INFO ] 05:37:18,966 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-616697: destroy
+[INFO ] 05:37:18,966 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,966 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-7779161: init
+[INFO ] 05:37:18,981 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[INFO ] 05:37:18,997 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-7779161: destroy
+[INFO ] 05:37:18,997 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:18,997 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-18002397: init
+[INFO ] 05:37:19,013 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[INFO ] 05:37:19,013 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-18002397: destroy
+[DEBUG] 05:37:19,013 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?servertopped ...
+[INFO ] 05:37:20,059 [?                                       :   ?]                      : I/O exception (java.net.ConnectException) caught when processing request: Connection refused: connect
+[INFO ] 05:37:20,059 [?                                       :   ?]                      : Retrying request
+[INFO ] 05:37:21,263 [?                                       :   ?]                      : I/O exception (java.net.ConnectException) caught when processing request: Connection refused: connect
+[INFO ] 05:37:21,263 [?                                       :   ?]                      : Retrying request
+[INFO ] 05:37:22,466 [?                                       :   ?]                      : I/O exception (java.net.ConnectException) caught when processing request: Connection refused: connect
+[INFO ] 05:37:22,466 [?                                       :   ?]                      : Retrying request
+[INFO ] 05:37:23,559 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:23,559 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-7630115: init
+[INFO ] 05:37:23,559 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:23,559 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=invalidxrdslocation1 ...
+[DEBUG] 05:37:23,591 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=invalidxrdslocation2 ...
+[INFO ] 05:37:23,622 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-7630115: destroy
+[INFO ] 05:37:23,622 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:23,622 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-23710114: init
+[INFO ] 05:37:23,638 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:23,638 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplehtml&getheaders=invalidxrdslocation1 ...
+[DEBUG] 05:37:23,638 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplehtml&getheaders=invalidxrdslocation1 ...
+[DEBUG] 05:37:23,653 [HttpCache.java                          : 202]                      : Read 0 bytes.
+[DEBUG] 05:37:23,653 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplehtml&getheaders=invalidxrdslocation2 ...
+[DEBUG] 05:37:23,669 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplehtml&getheaders=invalidxrdslocation2 ...
+[DEBUG] 05:37:23,684 [HttpCache.java                          : 202]                      : Read 0 bytes.
+[INFO ] 05:37:23,684 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-23710114: destroy
+[INFO ] 05:37:23,794 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:23,794 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-18277846: init
+[INFO ] 05:37:23,794 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:23,794 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=multiplexrdslocation ...
+[WARN ] 05:37:23,794 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:23,809 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=multiplexrdslocation; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:23,809 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=multiplexrdslocation ...
+[DEBUG] 05:37:23,825 [HttpCache.java                          : 202]                      : Read 355 bytes.
+[DEBUG] 05:37:23,825 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML>
+
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<META content="http://localhost:8989/?headers=simplexrds&amp;xrds=simplexrds" http-equiv="X-XRDS-Location">
+
+<META content="http://localhost:8989/?xrds=simplexrds" http-equiv="X-XRDS-Location">
+
+<TITLE>Joe Schmoe's Homepage</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<H1>Joe Schmoe's Homepage</H1>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+
+
+</BODY>
+</HTML>
+
+[DEBUG] 05:37:23,825 [CyberNekoDOMYadisHtmlParser.java        :  86]                      : Found X-XRDS-Location META tags.
+[INFO ] 05:37:23,825 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-18277846: destroy
+[INFO ] 05:37:23,825 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:23,841 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-29985819: init
+[INFO ] 05:37:23,841 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:23,841 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=nohead ...
+[WARN ] 05:37:23,856 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:23,856 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=nohead; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:23,856 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=nohead ...
+[DEBUG] 05:37:23,872 [HttpCache.java                          : 202]                      : Read 109 bytes.
+[DEBUG] 05:37:23,872 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML>
+
+<BODY>
+
+<H1>Joe Schmoe's Homepage</H1>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+
+
+</BODY>
+</HTML>
+
+[DEBUG] 05:37:23,872 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=twoheads ...
+[WARN ] 05:37:23,888 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:23,888 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=twoheads; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:23,888 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=twoheads ...
+[DEBUG] 05:37:23,903 [HttpCache.java                          : 202]                      : Read 301 bytes.
+[DEBUG] 05:37:23,903 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=extraheadinbody ...
+[WARN ] 05:37:23,919 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:23,919 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=extraheadinbody; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:23,919 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=extraheadinbody ...
+[DEBUG] 05:37:23,934 [HttpCache.java                          : 202]                      : Read 321 bytes.
+[DEBUG] 05:37:23,934 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML>
+
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<META content="http://localhost:8989/?headers=simplexrds&amp;xrds=simplexrds" http-equiv="X-XRDS-Location">
+
+<TITLE>Joe Schmoe's Homepage</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<H1>Joe Schmoe's Homepage</H1>
+
+<P>Blah blah blah blah blah blah blah</P>
+some other head, inside the html body
+
+
+</BODY>
+</HTML>
+
+[DEBUG] 05:37:23,934 [CyberNekoDOMYadisHtmlParser.java        :  86]                      : Found X-XRDS-Location META tags.
+[DEBUG] 05:37:23,934 [YadisResolver.java                      : 314]                      : input:
+<html>
+<head>
+<meta http-equiv="X-XRDS-Location" content="http://localhost:8989/?headers=simplexrds&xrds=simplexrds">
+<title>Joe Schmoe's Homepage</title>
+</head>
+<body>
+<h1>Joe Schmoe's Homepage</h1>
+<p>Blah blah blah blah blah blah blah</p>
+<head>some other head, inside the html body</head>
+</body>
+</html>
+
+[DEBUG] 05:37:23,934 [YadisResolver.java                      : 315]                      : xrdsLocation: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:23,934 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:23,950 [HttpCache.java                          : 202]                      : Read 308 bytes.
+[DEBUG] 05:37:23,950 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=simplexrds
+[DEBUG] 05:37:23,950 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:23,950 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:23,966 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:23,966 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[INFO ] 05:37:23,966 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?html=extraheadinbody
+[INFO ] 05:37:23,966 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-29985819: destroy
+[INFO ] 05:37:24,075 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,075 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-5792771: init
+[INFO ] 05:37:24,075 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,075 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=headnometa ...
+[WARN ] 05:37:24,091 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:24,091 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=headnometa; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:24,091 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=headnometa ...
+[DEBUG] 05:37:24,106 [HttpCache.java                          : 202]                      : Read 444 bytes.
+[DEBUG] 05:37:24,106 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML>
+
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<TITLE>Joe Schmoe's Homepage</TITLE>
+
+</HEAD>
+
+<BODY>
+
+<H1>Joe Schmoe's larger than 350 bytes Homepage</H1>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+<P>Blah blah blah blah blah blah blah</P>
+
+
+
+</BODY>
+</HTML>
+
+[DEBUG] 05:37:24,106 [CyberNekoDOMYadisHtmlParser.java        :  64]                      : No <meta> element found under <html><head>. See Yadis specification, section 6.2.5/1.
+[DEBUG] 05:37:24,106 [YadisResolver.java                      : 314]                      : input:
+<html>
+<head>
+<title>Joe Schmoe's Homepage</title>
+</head>
+<body>
+<h1>Joe Schmoe's larger than 350 bytes Homepage</h1>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+<p>Blah blah blah blah blah blah blah</p>
+</body>
+</html>
+
+[DEBUG] 05:37:24,106 [YadisResolver.java                      : 315]                      : xrdsLocation: null
+[INFO ] 05:37:24,106 [YadisResolver.java                      : 250]                      : Yadis discovered 0 endpoints from: http://localhost:8989/?html=headnometa
+[INFO ] 05:37:24,106 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-5792771: destroy
+[INFO ] 05:37:24,106 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,122 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-26673841: init
+[INFO ] 05:37:24,122 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,122 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=empty ...
+[WARN ] 05:37:24,138 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:24,138 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=empty; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:24,138 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=empty ...
+[DEBUG] 05:37:24,153 [HttpCache.java                          : 202]                      : Read 0 bytes.
+[DEBUG] 05:37:24,153 [CyberNekoDOMYadisHtmlParser.java        :  44]                      : document:
+<HTML></HTML>
+
+[INFO ] 05:37:24,153 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-26673841: destroy
+[INFO ] 05:37:24,153 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,153 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-24420676: init
+[INFO ] 05:37:24,169 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,169 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?html=nonexistantfile ...
+[WARN ] 05:37:24,169 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\headers\null (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:24,184 [YadisResolver.java                      : 382]                      : Cannot retrieve X-XRDS-Location using HEAD from http://localhost:8989/?html=nonexistantfile; status=HTTP/1.1 500 Internal Server Error
+[DEBUG] 05:37:24,184 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?html=nonexistantfile ...
+[WARN ] 05:37:24,200 [JCLLoggerAdapter.java                   : 311]                      : /: java.io.FileNotFoundException: target\test-data\html\nonexistantfile (指定されたファイルが見つかりません。)
+[DEBUG] 05:37:24,200 [HttpCache.java                          : 202]                      : Read 2975 bytes.
+[INFO ] 05:37:24,200 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-24420676: destroy
+[INFO ] 05:37:24,216 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,216 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-31085410: init
+[INFO ] 05:37:24,216 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,216 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simpleheaders ...
+[DEBUG] 05:37:24,231 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexrds
+[DEBUG] 05:37:24,247 [HttpCache.java                          : 202]                      : Read 10 bytes.
+[DEBUG] 05:37:24,247 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?xrds=simplexrds&headers=simplexrds
+[INFO ] 05:37:24,247 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-31085410: destroy
+[INFO ] 05:37:24,247 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,247 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-10876681: init
+[INFO ] 05:37:24,263 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,263 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds1 ...
+[DEBUG] 05:37:24,278 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds1 ...
+[DEBUG] 05:37:24,294 [HttpCache.java                          : 202]                      : Read 279 bytes.
+[DEBUG] 05:37:24,294 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://specs.openid.net/auth/2.0/signon, http://openid.net/signon/1.0, http://openid.net/signon/1.1, http://specs.openid.net/auth/2.0/server]
+[DEBUG] 05:37:24,294 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:24,309 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds2 ...
+[DEBUG] 05:37:24,325 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds2 ...
+[DEBUG] 05:37:24,341 [HttpCache.java                          : 202]                      : Read 293 bytes.
+[DEBUG] 05:37:24,341 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://specs.openid.net/auth/2.0/signon, http://openid.net/signon/1.0, http://openid.net/signon/1.1, http://specs.openid.net/auth/2.0/server]
+[DEBUG] 05:37:24,341 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http://www.openidenabled.com/</URI>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[INFO ] 05:37:24,356 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-10876681: destroy
+[INFO ] 05:37:24,356 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,356 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-19312997: init
+[INFO ] 05:37:24,372 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,372 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds3 ...
+[DEBUG] 05:37:24,372 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds3 ...
+[DEBUG] 05:37:24,388 [HttpCache.java                          : 202]                      : Read 280 bytes.
+[DEBUG] 05:37:24,388 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://specs.openid.net/auth/2.0/signon, http://openid.net/signon/1.0, http://openid.net/signon/1.1, http://specs.openid.net/auth/2.0/server]
+[DEBUG] 05:37:24,388 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>:</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:24,403 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds4 ...
+[DEBUG] 05:37:24,419 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds4 ...
+[DEBUG] 05:37:24,434 [HttpCache.java                          : 202]                      : Read 284 bytes.
+[DEBUG] 05:37:24,434 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://specs.openid.net/auth/2.0/signon, http://openid.net/signon/1.0, http://openid.net/signon/1.1, http://specs.openid.net/auth/2.0/server]
+[DEBUG] 05:37:24,434 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI>http:</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:24,450 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds5 ...
+[DEBUG] 05:37:24,466 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds5 ...
+[DEBUG] 05:37:24,481 [HttpCache.java                          : 202]                      : Read 306 bytes.
+[DEBUG] 05:37:24,481 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://specs.openid.net/auth/2.0/signon, http://openid.net/signon/1.0, http://openid.net/signon/1.1, http://specs.openid.net/auth/2.0/server]
+[DEBUG] 05:37:24,481 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://specs.openid.net/auth/2.0/signon</Type>
+      <URI>bla bla</URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:24,497 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:24,497 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://specs.openid.net/auth/2.0/signon]
+URI: bla bla
+URI Priority: -1
+LocalID: null
+[DEBUG] 05:37:24,497 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds5
+[INFO ] 05:37:24,497 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds5
+[INFO ] 05:37:24,497 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-19312997: destroy
+[INFO ] 05:37:24,497 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,513 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-3261503: init
+[INFO ] 05:37:24,528 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,528 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=xrdsdelegate ...
+[DEBUG] 05:37:24,528 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=xrdsdelegate ...
+[DEBUG] 05:37:24,544 [HttpCache.java                          : 202]                      : Read 435 bytes.
+[DEBUG] 05:37:24,544 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://specs.openid.net/auth/2.0/signon, http://openid.net/signon/1.0, http://openid.net/signon/1.1, http://specs.openid.net/auth/2.0/server]
+[DEBUG] 05:37:24,544 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns:openid="http://openid.net/xmlns/1.0"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://openid.net/signon/1.1</Type>
+      <URI>http://www.openidenabled.com/</URI>
+      <openid:Delegate>http://example.com/delegate/</openid:Delegate>
+    </Service>
+
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:24,559 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:24,559 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://openid.net/signon/1.1]
+URI: http://www.openidenabled.com/
+URI Priority: -1
+LocalID: null
+[DEBUG] 05:37:24,559 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=xrdsdelegate
+[INFO ] 05:37:24,559 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=simplexrds&xrds=xrdsdelegate
+[DEBUG] 05:37:24,559 [UrlIdentifier.java                      : 129]                      : Normalized: http://localhost:8989/?headers=simplexrds&xrds=xrdsdelegate to: http://localhost:8989/?headers=simplexrds&xrds=xrdsdelegate
+[INFO ] 05:37:24,559 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-3261503: destroy
+[INFO ] 05:37:24,559 [JCLLoggerAdapter.java                   : 216]                      : jetty-6.1.x
+[INFO ] 05:37:24,559 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-22559360: init
+[INFO ] 05:37:24,575 [JCLLoggerAdapter.java                   : 216]                      : Started SocketConnector@0.0.0.0:8989
+[DEBUG] 05:37:24,575 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6 ...
+[DEBUG] 05:37:24,606 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6 ...
+[DEBUG] 05:37:24,622 [HttpCache.java                          : 202]                      : Read 279 bytes.
+[DEBUG] 05:37:24,622 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://example.com/]
+[DEBUG] 05:37:24,622 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI></URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:24,638 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[DEBUG] 05:37:24,638 [XrdsParserImpl.java                     : 124]                      : Discovered endpoint: 
+Service priority: 0
+Type: [http://example.com/]
+URI: null
+URI Priority: -1
+LocalID: null
+[DEBUG] 05:37:24,638 [YadisResult.java                        : 122]                      : Setting X-XRDS-Location for yadis result: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[INFO ] 05:37:24,638 [YadisResolver.java                      : 250]                      : Yadis discovered 1 endpoints from: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[DEBUG] 05:37:24,653 [HtmlResolver.java                       :  40]                      : discovery.html.parser:org.openid4java.discovery.html.CyberNekoDOMHtmlParser
+[DEBUG] 05:37:24,653 [Discovery.java                          :  39]                      : discovery.xri.resolver:org.openid4java.discovery.xri.XriDotNetProxyResolver
+[DEBUG] 05:37:24,669 [XriDotNetProxyResolver.java             :  44]                      : discovery.xrds.parser:org.openid4java.discovery.xrds.XrdsParserImpl
+[WARN ] 05:37:24,669 [RealmVerifier.java                      : 107]                      : RP discovery / realm validation disabled; 
+[DEBUG] 05:37:24,950 [Discovery.java                          :  88]                      : Creating URL identifier for: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[DEBUG] 05:37:24,950 [UrlIdentifier.java                      : 129]                      : Normalized: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6 to: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[INFO ] 05:37:24,950 [Discovery.java                          : 127]                      : Starting discovery on URL identifier: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[DEBUG] 05:37:24,950 [YadisResolver.java                      : 357]                      : Performing HTTP HEAD on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6 ...
+[DEBUG] 05:37:24,966 [YadisResolver.java                      : 357]                      : Performing HTTP GET on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6 ...
+[DEBUG] 05:37:24,981 [HttpCache.java                          : 202]                      : Read 279 bytes.
+[DEBUG] 05:37:24,981 [XrdsParserImpl.java                     :  57]                      : Parsing XRDS input for service types: [http://specs.openid.net/auth/2.0/signon, http://openid.net/signon/1.0, http://openid.net/signon/1.1, http://specs.openid.net/auth/2.0/server]
+[DEBUG] 05:37:24,981 [XrdsParserImpl.java                     : 170]                      : Parsing XRDS input: <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI></URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:24,997 [XrdsParserImpl.java                     :  99]                      : Found 1 services for the requested types.
+[INFO ] 05:37:24,997 [YadisResolver.java                      : 250]                      : Yadis discovered 0 endpoints from: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[INFO ] 05:37:24,997 [Discovery.java                          : 138]                      : No OpenID service endpoints discovered through Yadis; attempting HTML discovery...
+[INFO ] 05:37:24,997 [HttpCache.java                          : 242]                      : Cached GET response does not match the required content type, removing.
+[INFO ] 05:37:24,997 [HttpCache.java                          : 144]                      : Removing cached GET for http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[INFO ] 05:37:24,997 [HttpCache.java                          : 102]                      : Removing cached GET response for http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[DEBUG] 05:37:25,013 [HttpCache.java                          : 202]                      : Read 279 bytes.
+[DEBUG] 05:37:25,013 [UrlIdentifier.java                      : 129]                      : Normalized: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6 to: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[DEBUG] 05:37:25,013 [CyberNekoDOMHtmlParser.java             :  42]                      : Parsing HTML data:
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample XRDS file at: xrds -->
+<xrds:XRDS
+    xmlns:xrds="xri://$xrds"
+    xmlns="xri://$xrd*($v*2.0)">
+  <XRD>
+
+    <Service priority="0">
+      <Type>http://example.com/</Type>
+      <URI></URI>
+    </Service>
+
+  </XRD>
+</xrds:XRDS>
+
+
+[DEBUG] 05:37:25,013 [CyberNekoDOMHtmlParser.java             :  63]                      : HTML discovery result:
+ClaimedID:http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[INFO ] 05:37:25,013 [HtmlResolver.java                       : 130]                      : HTML discovery completed on: http://localhost:8989/?headers=simplexrds&xrds=malformedxrds6
+[INFO ] 05:37:25,013 [Discovery.java                          : 150]                      : Discovered 0 OpenID endpoints.
+[INFO ] 05:37:25,013 [JCLLoggerAdapter.java                   : 216]                      : org.openid4java.discovery.yadis.YadisTestServlet-22559360: destroy
