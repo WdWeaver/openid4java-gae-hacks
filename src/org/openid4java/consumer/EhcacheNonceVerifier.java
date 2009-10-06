@@ -4,10 +4,10 @@
 
 package org.openid4java.consumer;
 
+import java.util.Date;
+
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.Element;
-
-import java.util.Date;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

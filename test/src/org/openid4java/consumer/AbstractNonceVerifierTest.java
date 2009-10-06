@@ -7,10 +7,16 @@ package org.openid4java.consumer;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 import junit.framework.TestCase;
+
+import org.openid4java.TestEnvironment;
 import org.openid4java.util.InternetDateFormat;
 import org.openid4java.server.NonceGenerator;
 import org.openid4java.server.IncrementalNonceGenerator;
 
+import com.google.appengine.tools.development.ApiProxyLocalImpl;
+import com.google.apphosting.api.ApiProxy;
+
+import java.io.File;
 import java.util.Date;
 
 /**
@@ -29,14 +35,23 @@ public abstract class AbstractNonceVerifierTest extends TestCase
 
     public void setUp() throws Exception
     {
+		ApiProxy.setEnvironmentForCurrentThread(new TestEnvironment());  
+		ApiProxy.setDelegate(new ApiProxyLocalImpl(new File("./"+this.getClass().getName())) {}); 
+		ApiProxyLocalImpl proxy = (ApiProxyLocalImpl) ApiProxy.getDelegate();
+    	
         _nonceVerifier = createVerifier(MAX_AGE);
+    
     }
 
     public abstract NonceVerifier createVerifier(int maxAge);
 
     public void tearDown() throws Exception
     {
-        super.tearDown();
+    	super.tearDown();
+
+    	ApiProxy.setDelegate(null);  
+		ApiProxy.setEnvironmentForCurrentThread(null);  
+    
     }
 
     public void testSeen()

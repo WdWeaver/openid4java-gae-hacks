@@ -22,14 +22,6 @@ import java.util.Stack;
 
 import javax.crypto.spec.DHParameterSpec;
 
-/*
-import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.HttpStatus;
-import org.apache.commons.httpclient.cookie.CookiePolicy;
-import org.apache.commons.httpclient.methods.PostMethod;
-import org.apache.commons.httpclient.methods.StringRequestEntity;
-*/
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openid4java.OpenIDException;
@@ -41,6 +33,11 @@ import org.openid4java.discovery.Discovery;
 import org.openid4java.discovery.DiscoveryException;
 import org.openid4java.discovery.DiscoveryInformation;
 import org.openid4java.discovery.Identifier;
+import org.openid4java.httpclient.CookiePolicy;
+import org.openid4java.httpclient.HttpClient;
+import org.openid4java.httpclient.HttpStatus;
+import org.openid4java.httpclient.PostMethod;
+import org.openid4java.httpclient.StringRequestEntity;
 import org.openid4java.message.AssociationError;
 import org.openid4java.message.AssociationRequest;
 import org.openid4java.message.AssociationResponse;
@@ -58,12 +55,6 @@ import org.openid4java.server.IncrementalNonceGenerator;
 import org.openid4java.server.NonceGenerator;
 import org.openid4java.server.RealmVerifier;
 import org.openid4java.util.HttpClientFactory;
-
-import org.openid4java.httpclient.CookiePolicy;
-import org.openid4java.httpclient.HttpStatus;
-import org.openid4java.httpclient.StringRequestEntity;
-import org.openid4java.httpclient.HttpClient;
-import org.openid4java.httpclient.PostMethod;
 
 /**
  * Manages OpenID communications with an OpenID Provider (Server).

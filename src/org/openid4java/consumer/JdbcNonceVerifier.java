@@ -1,13 +1,13 @@
 
 package org.openid4java.consumer ;
 
-import java.util.Date ;
+import java.util.Date;
 
-import org.apache.commons.logging.Log ;
-import org.apache.commons.logging.LogFactory ;
-import org.springframework.dao.DataIntegrityViolationException ;
-import org.springframework.jdbc.core.JdbcTemplate ;
-import org.springframework.jdbc.core.support.JdbcDaoSupport ;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
 /**
  * 

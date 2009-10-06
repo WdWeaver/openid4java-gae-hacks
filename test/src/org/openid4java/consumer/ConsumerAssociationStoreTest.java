@@ -4,10 +4,17 @@
 
 package org.openid4java.consumer;
 
+import java.io.File;
+
 import junit.framework.TestCase;
 import junit.framework.Test;
 import junit.framework.TestSuite;
+
+import org.openid4java.TestEnvironment;
 import org.openid4java.association.Association;
+
+import com.google.appengine.tools.development.ApiProxyLocalImpl;
+import com.google.apphosting.api.ApiProxy;
 
 /**
  * @author Marius Scurtescu
@@ -23,6 +30,10 @@ public abstract class ConsumerAssociationStoreTest extends TestCase
 
     public void setUp() throws Exception
     {
+		ApiProxy.setEnvironmentForCurrentThread(new TestEnvironment());  
+		ApiProxy.setDelegate(new ApiProxyLocalImpl(new File("./"+this.getClass().getName())) {}); 
+		ApiProxyLocalImpl proxy = (ApiProxyLocalImpl) ApiProxy.getDelegate();
+    	
         _associationStore = createStore();
     }
 
@@ -31,6 +42,10 @@ public abstract class ConsumerAssociationStoreTest extends TestCase
     public void tearDown() throws Exception
     {
         _associationStore = null;
+
+        ApiProxy.setDelegate(null);  
+		ApiProxy.setEnvironmentForCurrentThread(null);  
+        
     }
 
     public void testSaveLoadRemove()
