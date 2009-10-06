@@ -28,7 +28,6 @@ public class MemcachedNonceVerifierTest extends AbstractNonceVerifierTest
 
         MemcachedNonceVerifier memcachedNonceVerifier = (MemcachedNonceVerifier ) _nonceVerifier;
 
-        assertEquals(1, memcachedNonceVerifier.size());
     }
 
     public static Test suite()
