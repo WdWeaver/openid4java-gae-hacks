@@ -104,7 +104,7 @@ class GAEHeadMethod implements GAEHttpMethod {
 		
 		if (executeDepth < maxRedirects && (code == 301 || code == 302)) {
 			for(HTTPHeader header: responseHeaders) {
-				if("Location".equals(header.getName())) {
+				if("Location".equalsIgnoreCase(header.getName())) {
 					url = header.getValue();
 					code = this.execute(service);
 					break;

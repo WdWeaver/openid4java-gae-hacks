@@ -251,7 +251,7 @@
     <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-api-1.0-sdk</artifactId>
-      <version>1.2.5</version>
+      <version>1.2.6</version>
     </dependency>
 
     <!-- higgins -->
@@ -400,13 +400,13 @@
     <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-api-1.0-runtime</artifactId>
-      <version>1.2.5</version>
+      <version>1.2.6</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.google.appengine</groupId>
       <artifactId>appengine-tools-sdk</artifactId>
-      <version>1.2.5</version>
+      <version>1.2.6</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

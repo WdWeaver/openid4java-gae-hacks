@@ -116,8 +116,10 @@ class GAEGetMethod implements GAEHttpMethod {
 		responseHeaders = response.getHeaders();
 
 		if (executeDepth < maxRedirects && (code == 301 || code == 302)) {
+			logger.fine("meets redirect...");
 			for(HTTPHeader header: responseHeaders) {
-				if("Location".equals(header.getName())) {
+				logger.fine(String.format("header name=%s,value=%s",header.getName(),header.getValue()));
+				if("Location".equalsIgnoreCase(header.getName())) {
 					url = header.getValue();
 					code = this.execute(service);
 					break;
